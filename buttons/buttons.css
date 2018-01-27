@@ -139,3 +139,62 @@ body {
     outline: 0;
     box-shadow: none !important;
 }
+
+/* emp-btn-style5 */
+
+.emp-btn-style5 button {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  outline:none !important;
+  width:200px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background-color: #06d79c;
+  border-color: #02be89;
+  color: #fff;
+}
+.emp-btn-style5 button:hover {
+  background-color: #02be89;
+  border-color: #00b07e;
+}
+.emp-btn-style5 button:active {
+  outline:none;
+}
+.emp-btn-style5 button.ribbon {
+  outline:none;
+  outline-color: transparent;
+}
+.emp-btn-style5 button.ribbon:before, .emp-btn-style5 button.ribbon:after {
+  top: 5px;
+  z-index: -10;
+}
+.emp-btn-style5 button.ribbon:before {
+  border-color: #02be89  #02be89  #02be89  transparent;
+  left: -25px;
+  border-width: 17px;
+}
+.emp-btn-style5 button.ribbon:after {
+  border-color: #02be89  transparent #02be89  #02be89;
+  right: -25px;
+  border-width: 17px;
+}
+
+.emp-btn-style5 button:before, button:after {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 0;
+  outline:none;
+}
+    
+.emp-btn-style5 button.btn-primary:before {
+    border-color: #02be89  #02be89  #02be89  transparent;
+}
+.emp-btn-style5 button.btn-primary:after {
+    border-color: #02be89  transparent #02be89  #02be89 ;
+}
+    
