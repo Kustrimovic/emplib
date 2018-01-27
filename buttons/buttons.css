@@ -1,0 +1,91 @@
+/* fonts */
+@font-face {
+    font-family: "Proxima Nova Bold";
+    src: url(font/ProximaNovaBold.otf) format("truetype");
+}
+@font-face {
+    font-family: "Proxima Nova Light";
+    src: url(font/ProximaNovaLight.otf) format("truetype");
+}
+@font-face {
+    font-family: "Proxima Nova Regular";
+    src: url(font/ProximaNovaRegular.otf) format("truetype");
+}
+@font-face {
+    font-family: "Proxima Nova Semibold";
+    src: url(font/ProximaNovaSemibold.otf) format("truetype");
+}
+@font-face {
+    font-family: "Proxima Nova Thin";
+    src: url(font/ProximaNovaThin.otf) format("truetype");
+}
+.title {
+	margin-bottom: 40px;
+}
+/* emp-btn-style1 */
+.emp-btn-style1 span {
+	margin-left: 30px;
+}
+.emp-btn-style1 {
+	transition: all 0.4s ease;
+	outline: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: 800;
+	font-size: 14px;
+	width: 200px;
+	color: #c2185b;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #c2185b;
+	border-radius: 0px;
+	font-family: "Proxima Nova Semibold";
+}
+.emp-btn-style1:hover {
+	color: #fff;
+	background-color: #c2185b;
+	border: none;
+	border-bottom: 2px solid #c2185b;
+	border-radius: 0px;
+}
+.emp-btn-style1:active {
+	color: #fff;
+	background-color: #c2185b;
+	border: none;
+	border-bottom: 2px solid #c2185b;
+	border-radius: 0px;
+}
+.emp-btn-style1:focus {
+	outline: none;
+	color: #fff;
+	background-color: #c2185b;
+	border: none;
+	border-bottom: 2px solid #c2185b;
+	border-radius: 0px;
+}
+/* emp-btn-style2 */
+.emp-btn-style2 {
+    background: #fff;
+    background: linear-gradient(to right,#fff 50%,#06d79c 50%);
+    background-size: 200% 100%;
+    transition: all .3s ease;
+    background-position: left bottom;
+    border: 2px solid #cfd8dc;
+    border-radius: 2px;
+    font-size: 16px;
+    font-family: proximaNovaSemibold;
+    font-weight: 600;
+    color: #343434;
+    width: 200px;
+    height: 42px;
+}
+.emp-btn-style2:hover {
+    background-position: right bottom;
+    color: #fff;
+    border: 2px solid #06d79c;
+}
+.emp-btn-style2:focus {
+    background-position: right bottom;
+    color: #fff;
+    border: 2px solid #06d79c;
+}
