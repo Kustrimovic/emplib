@@ -1,0 +1,99 @@
+body {
+  background-color: #fafbfc;
+}
+.m-t-40 {
+  margin-top: 40px;
+}
+.title a {
+  color: #0091ea;
+  text-decoration: none;
+}
+/* custom select */
+.emp-select {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 325px;
+  color: #ccc;
+  vertical-align: middle;
+  text-align: left;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+.emp-select .placeholder {
+  position: relative;
+  display: block;
+  background-image: linear-gradient(to right, #787878 50%, #545454 50%);
+  background-position: -15% 0;
+  background-size: 200% 100%;
+  z-index: 1;
+  padding: 1em;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #dadada;
+  font-family: "Proxima Nova Regular";
+  font-size: 12px;
+  height: 34.2px;
+  line-height: 11.2px;
+  border-radius: 0px;
+}
+.emp-select .placeholder:hover {
+  background-image: linear-gradient(to right, #787878 50%, #545454 50%);
+  background-position: -15% 0;
+}
+.emp-select .placeholder:after {
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'FontAwesome';
+  content: '\f078';
+  z-index: 10;
+}
+.emp-select.is-open .placeholder:after {
+  content: '\f077';
+}
+.emp-select.is-open ul {
+  display: block;
+  background-color: #2c2629;
+  margin: 0px;
+}
+.emp-select.is-open .placeholder {
+    background-image: linear-gradient(to right, #2c2629 50%, #2c2629 50%);
+    color: #fff;
+}
+.emp-select.select--white .placeholder {
+  background: #fff;
+  color: #999;
+}
+.emp-select.select--white .placeholder:hover {
+  background: #fafafa;
+}
+.emp-select ul {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  overflow-y: auto;
+  width: 100%;
+  background: #fff;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  margin: 5px 0 0 0;
+  padding: 0;
+  z-index: 100;
+}
+.emp-select ul li {
+  display: block;
+  text-align: left;
+  padding: 0.8em 1em 0.8em 1em;
+  color: #999;
+  cursor: pointer;
+  font-family: "Proxima Nova Regular";
+  font-size: 12px;
+}
+.emp-select ul li:hover {
+  background: transparent;
+  color: #fff;
+}

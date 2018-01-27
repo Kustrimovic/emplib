@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dropdown</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="dropdown.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 title">
+                    <div class="text-center">
+                        <h1>Dropdown</h1>
+                    </div>
+                    <h4>Empli site: <a href="http://empli.io/">http://empli.io/</a></h4>
+                    <h4>Empli facebook page: <a href="https://www.facebook.com/empli.io/">https://www.facebook.com/empli.io/</a></h4>
+                    <h3>Download projects GitHub: <a href="https://github.com/Kustrimovic/emplib.git">https://github.com/Kustrimovic/emplib.git</a></h3>
+                </div>
+                <div class="col-xs-12 col-md-4 m-t-40">
+                    <p>class="emp-select"</p>
+                    <p>js: // emp-dropdown-style1</p>
+                    <div class="emp-select">
+                        <span class="placeholder">SELECTED</span>
+                        <ul id="test">
+                            <li data-value="es">SELECT1</li>
+                            <li data-value="en">SELECT2</li>
+                            <li data-value="fr">SELECT3</li>
+                        </ul>
+                        <input type="hidden" name="changeme"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script>
+            // emp-dropdown-style1
+            $('.emp-select').on('click','.placeholder',function(){
+            var parent = $(this).closest('.emp-select');
+                if ( ! parent.hasClass('is-open')){
+                    parent.addClass('is-open');
+                    $('.emp-select.is-open').not(parent).removeClass('is-open');
+                } else {
+                    parent.removeClass('is-open');
+                }
+            }).on('click','ul>li',function(){
+                var parent = $(this).closest('.emp-select');
+                parent.removeClass('is-open').find('.placeholder').text( $(this).text() );
+                parent.find('input[type=hidden]').attr('value', $(this).attr('data-value') );
+            });
+
+        </script>
+    </body>
+</html>
